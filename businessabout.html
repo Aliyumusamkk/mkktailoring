@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .about{
+            padding: 30px;
+            min-width: 100%;
+            min-height: 60vh;
+            background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(gallary/pic1.jpeg);
+            background-size: auto;
+            background-position: top;
+            margin-bottom: 10%;
+        }
+
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        width: 200px;
+    }
+    .nav-link{
+        flex: 1;
+        text-align: right;
+    }
+    .nav-link ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .nav-link ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .nav-link ul li::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .nav-link ul li:hover::after{
+        width: 100%
+    }
+    .nav-fa{
+        display: none;
+    
+    }
+
+    @media screen and (max-width: 600px){
+        .text-box h1{
+            font-size: 20px;
+        }
+        *{
+            overflow-x: hidden;
+        }
+        .nav-link ul li{
+            display: block;
+        }
+        .nav-link{
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+        }
+        .nav-fa{
+            display: block;
+            color: #fff;
+            margin: 5px;
+            font-size: 22px;
+            cursor: pointer;
+            background: none;
+        }
+        .nav-link ul{
+            padding: 30px;
+        }
+
+        p{
+            color: #007;
+            font-size:15px;
+            line-height: 22px;
+            padding: 10px;
+        }
+        nav img{
+            width: 80px;
+            margin-top: 15px;
+        }
+
+        #about_title{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20%;
+        }
+        .about{
+            min-height: 40vh;
+        }
+
+        .perent_div{
+            width: 100%;
+            padding: 0% 8%;
+            margin-bottom: 5%;
+        }
+    
+        .child1 h3{
+            font-size: 14px;
+            text-align: center;
+            margin-top: 18px;
+        }
+    
+        .child2 img{
+           min-height: 300px;
+        }
+
+        .footer{
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(rgba(4, 9, 30, 0.06), rgba(4,9,30,0.06));
+            background-position: center;
+            background-size: cover;
+        }
+        .footer p{
+            font-size: 18px;
+        }
+        
+        .icon img{
+            width: 50px;
+            margin: 15px;
+        }
+        .nav-fa img{
+            width: 40px;
+        }
+
+    
+    }
+
+    /*-------outside media------*/
+
+    #about_title{
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        margin: 10%;
+    }
+
+
+
+    .child1 h3{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .child1 p{
+        text-align: center;
+        font-size: 22px;
+    }
+    .child1{
+        margin-bottom: 7%;
+    }
+
+    #abtimage{
+        width: 800px;
+    }
+    .img{
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p{
+        color: #007;
+        font-size:20px;
+        line-height: 22px;
+        padding: 10px;
+    }
+    h3{
+        font-size: 40px;
+    }
+
+    .footer{
+        margin-top: 15%;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(rgba(4, 9, 30, 0.06), rgba(4,9,30,0.06));
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .icon img{
+        width: 38px;
+        margin: 15px;
+    }
+
+    .icon a{
+        text-decoration: none;
+    }
+
+    .footer h3{
+        text-align: center;
+    }
+    /*
+    .logbg{
+        width: 210px;
+        height: 210px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background-color: transparent;
+    }*/
+    
+
+     
+    </style>
+</head>
+<body>
+    
+ <section class="about">
+    <nav>
+        <div class="logbg">
+            <a href="businessweb.html"><img src="gallary/logo.jpeg">
+            </a>
+        </div>
+
+        <div class="nav-link" id="nav-link">
+        
+        <span class="nav-fa"id="hidemenu"><img src="gallary/cancel.png"></span>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="businessabout.html">ABOUT</a></li>
+                <li><a href="businesscontact.html">CONTACT</a></li>
+                <li><a href="imagestyle.html">STYLES</a></li>
+            </ul>
+        </div>
+        <span class="nav-fa" id="showmenu"><img src="gallary/menu.png"></span>
+        <!-- <span class="nav-fa" id="showemenu">X</span> -->
+ </nav>
+ <h1 id="about_title">About Us</h1>
+ </section>
+
+ <section>
+    
+        <div class="child1">
+            <h3>We love Fashion<br>and Design</h3>
+            <p>Mkk tailoring center is located at Biu Local Government Biu Borno State.<br>We saw a very atractive Male and famale Styles as well as the latest<br>and stuning fashion Designer that fit Gogeoges ladeis and women with difference<br>shape and also Styles for wedding and non-wedding party.</p>
+        </div>
+        <div class="img">
+            <img src="gallary/pic5.jpeg" id="abtimage">
+        </div>
+         
+    </section>
+ <section class="footer">
+    <h3>About Us</h3>
+    <p>Mkk tailoring center is located at Biu Local Government Biu Borno State.<br>We saw a very atractive Male and famale Styles.</p>
+        <div class="icon">
+            <a href="https://web.facebook.com/Aliyumusakalakala">
+                <img src="gallary/facebook.jpeg">
+            </a>
+        
+            <a href="https://wa.link/dlvy3u">
+                <img src="gallary/what.png">
+            </a>
+            <a href="#">
+                <img src="gallary/twitter (1).jpeg">
+            </a>
+
+            <a href="https://www.linkedin.com/in/aliyu-musa-kalakala-4aa427248/">
+                <img src="gallary/linkedin.png">
+            </a>
+
+            <a href="https://tiktok.com/aliyumusa416">
+                <img src="gallary/tictick.png">
+            </a>
+
+            <p style="font-size:15px">@copyright 2023 | Designed by Aliyu Musa kalakala<br>+2348069075601</p>
+        </div>
+</section>
+
+ <script src="businessweb.js"></script>
+</body>
+</html>
