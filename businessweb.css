@@ -77,7 +77,7 @@ h2>a{
     background: transparent;
     position: relative;
     cursor: pointer;
-    font-size: 18;
+    font-size: 18px;
     font-weight: bolder;
 }
 .hero-btn2{
@@ -86,7 +86,7 @@ h2>a{
     color: #fff;
     border: 3px solid #fff;
     border-radius: 10px;
-    padding: 20px 34px;
+    padding: 13px 30px;
     background: #f6baba;
     position: relative;
     cursor: pointer;
@@ -97,7 +97,7 @@ h2>a{
 }
 .hero-btn2:hover{
     border: 2px solid #fff;
-    font-size: 22px;
+    font-size: 21px;
     color: #fff;
     background: #ccc;
 }
@@ -161,6 +161,8 @@ h2>a{
     }
     .nav-fa img{
         width: 40px;
+        background: #fff;
+        border-radius: 10px;
     }
 }
 
@@ -178,13 +180,12 @@ h1{
 p{
     color: #007;
     font-size:20px;
-    font-weight: bolder;
     line-height: 22px;
     padding: 10px;
 }
 
 .row{
-    margin: 3% 5%;
+    margin: 2.5% 4%;
     display: flex;
     justify-content: space-between;
 
@@ -195,7 +196,7 @@ p{
     background: rgb(247, 234, 234);
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 25px 12px;
+    padding: 20px 10px;
     box-sizing: border-box;
     transition: 0.5s;
 }
@@ -207,10 +208,11 @@ h2{
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
-    margin: 10px 0;
+    color: seagreen;
+    margin: -12px;
 }
 h3{
-    font-size: 35px;
+    font-size: 30px;
 }
 .col:hover{
     box-shadow: 0px 0px 20px 2px #000;
