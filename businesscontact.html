@@ -1,143 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Us</title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
-            overflow-x: hidden;
+            
         }
-        body{
-            overflow-x: hidden;
-        }
-        .about{
-            padding: 30px;
-            min-width: 100%;
+        
+        .header{
             height: 65vh;
-            background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(gallary/me2.jpg);
-            background-size: auto;
-            background-position: top;
-            margin-bottom: 10%;
+            min-width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(gallary/me2.jpg);
+            background-position: center;
+            background-size: contain;
+            position: relative;
+            overflow: hidden;
         }
-
-    nav{
-        display: flex;
-        padding: 2% 6%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav img{
-        width: 200px;
-    }
-    .nav-link{
-        flex: 1;
-        text-align: right;
-    }
-    .nav-link ul li{
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    .nav-link ul li a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .nav-link ul li::after{
-        content: "";
-        width: 0%;
-        height: 2px;
-        background-color: #f44336;
-        display: block;
-        margin: auto;
-        transition: 0.5s;
-    }
-    
-    .nav-link ul li:hover::after{
-        width: 100%
-    }
-    .nav-fa{
-        display: none;
-    
-    }
-
-    @media only screen and (max-width: 600px){
-        .text-box h1{
-            font-size: 20px;
+        
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
         }
-        body{
-            overflow-x: hidden;
-        }
-      
-        .nav-link ul li{
-            display: block;
+        nav img{
+            width: 150px;
         }
         .nav-link{
-            position: absolute;
-            background: #f44336;
-            height: 100vh;
-            width: 200px;
-            top: 0;
-            right: -200px;
-            text-align: left;
-            z-index: 2;
-            transition: 1s;
+            flex: 1;
+            text-align: right;
         }
-        .nav-fa{
-            margin-left: 2%;
-            display: block;
-            cursor: pointer;
+        .nav-link ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 6px 10px;
+            position: relative;
         }
-        .nav-fa img{
-            width: 30px;
-            background: #dddddd;
-            border-radius: 2px;
-        }
-        .nav-link ul{
-            padding: 20px;
-        }
-
-        nav img{
-            width: 80px;
-            margin-top: 15px;
-        }
-
-        #about_title{
+        .nav-link ul li a{
             color: #fff;
-            font-size: 25px;
-            text-align: center;
-            margin-top: 20%;
+            text-decoration: none;
+            font-size: 20px;
         }
-        .about{
-            min-height: 40vh;
+        .nav-link ul li::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
         }
-      
         
-    }
+        .nav-link ul li:hover::after{
+            width: 100%
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+        }
+       
+        
+        .nav-fa{
+            display: none;
+        
+        }
 
-    ul img{
-        width: 70px;
-        padding: 0.5% 0.5%;
-    }
-    #ul2{
-            margin-top: 6%;
-    }
-
- 
-
-    /*-------outside media------*/
-
-    #about_title{
-        color: #fff;
-        font-size: 50px;
+        
+    .child1 h3{
+        font-size: 30px;
         text-align: center;
-        margin: 10%;
+        margin-top: 50px;
+    }
+    .child1 p{
+        text-align: center;
+        font-size: 22px;
+        color: #007;
+    }
+    .child1{
+        margin-bottom: 7%;
+    }
+
+    #abtimage{
+        width: 800px;
+    }
+    .img{
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
     }
 
     form{
@@ -170,9 +136,16 @@
         border-radius: 10px;
         color: #fff;
     }
-
+    .icon img{
+        width: 35px;
+        margin: 15px;
+    }
+    .address-div span{
+        font-weight: bolder;
+        margin: 2.5%;
+        position: absolute;
+    }
     .footer{
-        margin-top: 10%;
         width: 100%;
         text-align: center;
         padding: 30px 0;
@@ -180,34 +153,84 @@
         background-position: center;
         background-size: cover;
     }
-    .footer p{
-        color: #007;
+    h3{
+        font-size: 40px;
     }
+    
     .icon img{
         width: 35px;
         margin: 15px;
     }
+    
     .icon a{
         text-decoration: none;
     }
-    .footer h3{
-        font-size: 30px;
+    p{
+        color: #007;
+        font-size:20px;
+        line-height: 22px;
+        padding: 10px;
     }
-    .address-div span{
-        font-weight: bolder;
-        margin: 2.5%;
-        position: absolute;
-    }
+
+
+    @media(max-width: 700px){
+        *{
+         overflow-x: hidden;
+        }
+         .text-box h1{
+             font-size: 30px;
+         }
+         .nav-link ul li{
+             display: block;
+         }
+         .nav-link{
+             position: absolute;
+             background: #f44336;
+             height: 100vh;
+             width: 200px;
+             top: 0;
+             right: -200px;
+             text-align: left;
+             z-index: 2;
+             transition: 1s;
+         }
+         .nav-fa{
+             display: block;
+             margin-left: 2%;
+             cursor: pointer;
+         }
+         .nav-fa img{
+             width: 30px;
+             background: #dddddd;
+             border-radius: 2px;
+         }
+         .nav-link ul{
+             padding: 20px;
+         }
+         .text-box{
+             margin-top: 15%;
+             color: #fff;
+             text-align: center;
+         }
+         nav img{
+         width: 80px;
+         margin-top: 35px;
+         }
+     
+         .footer p{
+             font-size: 16px;
+         }
+     
+     }
     </style>
 </head>
 <body>
-    <section class="about">
+    <section class="header">
         <nav>
             <div class="logbg">
                 <a href="index.html"><img src="gallary/logo.jpeg">
                 </a>
             </div>
-    
             <div class="nav-link" id="nav-link">
             
             <span class="nav-fa"id="hidemenu"><img src="gallary/cancel.png"></span>
@@ -219,12 +242,14 @@
                 </ul>
             </div>
             <span class="nav-fa" id="showmenu"><img src="gallary/menu.png"></span>
-            <!-- <span class="nav-fa" id="showemenu">X</span> -->
-     </nav>
-     <h1 id="about_title">Contact Us</h1>
-     </section>
-
-     <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdicYaFO3vf7f0j0zJ7ZClszazy34_dH4ifNHmgHdQK7MBPsQ/formResponse">
+               <!-- <span class="nav-fa" id="showemenu">X</span> -->
+        </nav>
+        <div class="text-box">
+            <h1 id="about_title">Contact Us</h1>
+        </div>
+    </section>
+    
+    <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdicYaFO3vf7f0j0zJ7ZClszazy34_dH4ifNHmgHdQK7MBPsQ/formResponse">
 
         <input type="text" name="entry.17194490" id="" placeholder="Enter Your Name" required>
         <br>
@@ -240,18 +265,18 @@
 
         <button type="submit">Send</button>
        </form>
-       <div class="address-div">
+       
+       <div class="address-div icon">
         <ul id="ul2">
             <li><img src="gallary/home.gif"><span>Jugwal Anguwan Maza Biu Borno</span></li>
             <li><img src="gallary/contacts2.png"><span>+2348069075601, +2349121612006</span></li>
             <li><img src="gallary/email.png"><span>aliyumusa775@gmail.com</span></li>
            </ul>
        </div>
-       
 
        <section class="footer">
         <h3>About Us</h3>
-        <p>Mkk tailoring center is located at Biu Local Government Biu Borno State.<br>We saw a very atractive Male and famale Styles.</p>
+        <p>Mkk tailoring center is located at Biu Local Government Biu Borno State.We saw a very atractive Male and famale Styles <br> as wel as the latest and stuning fashion Designer that fit Gorgeous ladeis and women<br> with difference shape or size visit About Us page for more.</p>
             <div class="icon">
                 <a href="https://web.facebook.com/Aliyumusakalakala">
                     <img src="gallary/facebook.jpeg">
@@ -263,19 +288,19 @@
                 <a href="#">
                     <img src="gallary/twitter (1).jpeg">
                 </a>
-    
+
                 <a href="https://www.linkedin.com/in/aliyu-musa-kalakala-4aa427248/">
                     <img src="gallary/linkedin.png">
                 </a>
-    
+
                 <a href="https://www.tiktok.com/@aliyumusa416">
                     <img src="gallary/tictick.png">
                 </a>
-    
-                <p style="font-size: 16px;">Copyright @2023 | Designed by Aliyu Musa kalakala<br>+2348069075601</p>
+
+                <p style="font-size:15px;">Copyright @2023 | Designed by Aliyu Musa kalakala<br>+2348069075601</p>
             </div>
     </section>
 
-     <script src="businessweb.js"></script>
+        <script src="businessweb.js"></script>
 </body>
 </html>

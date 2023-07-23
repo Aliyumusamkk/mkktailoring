@@ -1,219 +1,200 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images</title>
-   
+    <title>Document</title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
-            overflow-x: hidden;
+            
         }
         
-        .about{
-            padding: 30px;
+        .header{
+            height: 65vh;
             min-width: 100%;
-            min-height: 60vh;
-            background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(gallary/pic1.jpeg);
-            background-size: auto;
-            background-position: top;
+            background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(gallary/pic4.jpeg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
             margin-bottom: 10%;
         }
-
-    nav{
-        display: flex;
-        padding: 2% 6%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav img{
-        width: 150px;
-        height: 150px;
-    }
-    .nav-link{
-        flex: 1;
-        text-align: right;
-    }
-    .nav-link ul li{
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    .nav-link ul li a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .nav-link ul li::after{
-        content: "";
-        width: 0%;
-        height: 2px;
-        background-color: #f44336;
-        display: block;
-        margin: auto;
-        transition: 0.5s;
-    }
-    
-    .nav-link ul li:hover::after{
-        width: 100%
-    }
-    .nav-fa{
-        display: none;
-    
-    }
-
-    @media screen and (max-width: 700px) {
-        .text-box h1{
-            font-size: 20px;
-        }
-        body{
-            overflow-x: hidden;
-        }
         
-        .nav-link ul li{
-            display: block;
-        }
-        .nav-link{
-            position: absolute;
-            background: #f44336;
-            height: 100vh;
-            width: 200px;
-            top: 0;
-            right: -200px;
-            text-align: left;
-            z-index: 2;
-            transition: 1s;
-        }
-        .nav-fa{
-            margin-left: 2%;
-            display: block;
-            cursor: pointer;
-        }
-        .nav-fa img{
-            width: 30px;
-            height: 30px;
-            background: #dddddd;
-            border-radius: 2px;
-        }
-        .nav-link ul{
-            padding: 20px;
-        }
-
-        p{
-            color: #007;
-            font-size:15px;
-            line-height: 22px;
-            padding: 10px;
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
         }
         nav img{
-            width: 80px;
-            height: 50px;
-            margin-top: 15px;
+            width: 150px;
+        }
+        .nav-link{
+            flex: 1;
+            text-align: right;
+        }
+        .nav-link ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 6px 10px;
+            position: relative;
+        }
+        .nav-link ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav-link ul li::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        
+        .nav-link ul li:hover::after{
+            width: 100%
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
         }
        
-
-        #about_title{
-            color: #fff;
-            font-size: 30px;
-            text-align: center;
-            margin-top: 20%;
-        }
-        .about{
-            min-height: 40vh;
-        }
-
-    }
         
-
-         /*-------outside media------*/
-
-      
-        /*
-        .logbg{
-            width: 235px;
-            height: 235px;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            background-color: transparent;
-            padding: 1.5%;
-        }*/
+        .nav-fa{
+            display: none;
+        
+        }
+        
         .img{
+            display: inline-block;
             width: 100%;
             height: 100vh;
             padding-bottom: 20%;
             
         }
-        img{
+        .listimage img{
             width: 256px;
             height: 350px;
             margin-left: 3px;
         }
-        h1{
-            color: #fff;
-            text-align: center;
-            font-size: 50px;
-        }
-        @media (max-width: 700px) {
-            img{
+
+        @media(max-width: 700px){
+            *{
+             overflow-x: hidden;
+            }
+             .text-box h1{
+                 font-size: 30px;
+             }
+             .nav-link ul li{
+                 display: block;
+             }
+             .nav-link{
+                 position: absolute;
+                 background: #f44336;
+                 height: 100vh;
+                 width: 200px;
+                 top: 0;
+                 right: -200px;
+                 text-align: left;
+                 z-index: 2;
+                 transition: 1s;
+             }
+             .nav-fa{
+                 display: block;
+                 margin-left: 2%;
+                 cursor: pointer;
+             }
+             .nav-fa img{
+                 width: 30px;
+                 background: #dddddd;
+                 border-radius: 2px;
+             }
+             .nav-link ul{
+                 padding: 20px;
+             }
+             .text-box{
+                 margin-top: 15%;
+                 color: #fff;
+                 text-align: center;
+             }
+             nav img{
+             width: 80px;
+             margin-top: 35px;
+             }
+         
+             .footer p{
+                 font-size: 16px;
+                 line-height: 22px;
+                 padding: 10px;
+             }
+
+             .listimage img{
                 width: 170px;
                 height: 200px;
                 margin-left: 1px;
             }
+         
+         }
 
+         .footer{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            background: linear-gradient(rgba(4, 9, 30, 0.06), rgba(4,9,30,0.06));
+            background-position: center;
+            background-size: cover;
+        }
+        .footer h3{
+           font-size: 40px;
+           text-align: center;
+           margin: 10px;
+        }
+        .footer p{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+         }
+        
+        .icon img{
+            width: 35px;
+            height: 30px;
+            margin: 10px;
+        }
+        .icon a{
+            text-decoration: none;
+        }
+        p{
+            color: #007;
         }
 
-      
 
-        
-.footer{
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    background: linear-gradient(rgba(4, 9, 30, 0.06), rgba(4,9,30,0.06));
-    background-position: center;
-    background-size: cover;
-}
-.footer h3{
-   font-size: 40px;
-   text-align: center;
-   margin: 10px;
-}
-.footer p{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px;
- }
-
-.icon img{
-    width: 35px;
-    height: 30px;
-    margin: 10px;
-}
-.icon a{
-    text-decoration: none;
-}
-p{
-    color: #007;
-}
-
-
-    
     </style>
 </head>
 <body>
-    <section class="about">
+    <section class="header">
         <nav>
             <div class="logbg">
                 <a href="index.html"><img src="gallary/logo.jpeg">
                 </a>
             </div>
-    
             <div class="nav-link" id="nav-link">
             
             <span class="nav-fa"id="hidemenu"><img src="gallary/cancel.png"></span>
@@ -225,16 +206,14 @@ p{
                 </ul>
             </div>
             <span class="nav-fa" id="showmenu"><img src="gallary/menu.png"></span>
-            <!-- <span class="nav-fa" id="showemenu">X</span> -->
-     </nav>
-     <h1 id="about_title">GALLARY</h1>
-     </section>
-   
-    <div class="image">
-        <img src="gallary/p10.png">
-        <img src="gallary/p12.png">
+               <!-- <span class="nav-fa" id="showemenu">X</span> -->
+        </nav>
+        <div class="text-box">
+            <h1 id="about_title">GALLARY</h1>
+        </div>
+    </section>
+    <div class="image listimage">
         <img src="gallary/p14.jpg">
-        <img src="gallary/p13.png">
         <img src="gallary/p15.jpg">
         <img src="gallary/p17.jpg">
         <img src="gallary/p19.jpg">
@@ -304,7 +283,6 @@ p{
         <img src="gallary/84.png">
         <img src="gallary/85.png">
     </div>
-    <a href="imagestyle.html" style="font-size: 30px; float: right; margin: 20px">GO UP</a>
 
     <section class="footer">
         <h3>About Us</h3>
